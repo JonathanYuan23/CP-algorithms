@@ -14,7 +14,7 @@ using namespace std; using pii = pair<int, int>;  using piii = pair<int, pii>;  
 #define sz(x) (int)(x.size())
 #define ms(a, b) memset(a, b, sizeof a)
 
-const int MOD = 1000000007, INF = 0x3f3f3f3f, MX = 1e5+5, IMX = INT_MAX, IMN = INT_MIN;
+const int MOD = 1e9+7, INF = 0x3f3f3f3f, MX = 1e5+5, IMX = INT_MAX, IMN = INT_MIN;
 const long long LLMX = LONG_LONG_MAX, LLMN = LONG_LONG_MIN;
 const char nl = '\n';
 
