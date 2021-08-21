@@ -1,2 +1,2 @@
 # cp-algorithms
-implementations of various cp algorithms (not all are mine)
+implementations of various competitive programming algorithms (not all are mine)
