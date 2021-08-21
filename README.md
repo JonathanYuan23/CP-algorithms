@@ -1,2 +1,2 @@
-# cp-algorithms
-implementations of various competitive programming algorithms (not all are mine)
+# cp datastructures and algorithms
+implementations of various competitive programming datastructures and algorithms (not all are mine)
