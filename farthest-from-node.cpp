@@ -1,16 +1,8 @@
-#pragma GCC optimize "Ofast"
 #include <bits/stdc++.h>
 using namespace std;
 
-#define ll long long
-#define MOD 1000000009
-#define p 31
-#define INF 0x3f3f3f3f
 #define MAXN 500005
 #define pb push_back
-#define LSB(S) (S & (-S))
-typedef vector<int> vi;
-typedef vector<vector<int>> vii;
 
 int n, a, b, ans, v, dist[MAXN], dist2[MAXN];
 vector<int> tree[MAXN];

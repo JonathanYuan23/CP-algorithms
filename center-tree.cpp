@@ -1,16 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#define ll long long
-#define MOD 1000000007
 #define fi first
 #define se second
-#define INF 0x3f3f3f3f
 #define MAXN 100005
 #define pb push_back
-#define LSB(S) (S & (-S))
 typedef pair<int, int> pii;
-typedef pair<pair<int, int>, int> piii;
 
 int N, M, L, start, farthest, maxd, center, rad, dis[MAXN], pre[MAXN], vis[MAXN];
 vector<pii> graph[MAXN], centers;

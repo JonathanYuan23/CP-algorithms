@@ -46,22 +46,11 @@ output:
 #include <bits/stdc++.h>
 using namespace std;
 
-#pragma GCC optimize "Ofast"
-#define fre freopen("input.txt", "r", stdin)
-#define ll long long
-#define ull unsigned long long
-#define MOD 998244353
 #define fi first
 #define se second
-#define INF 0x3f3f3f3f3f3f3f3f
 #define MAX 300005
 #define pb push_back
-#define LSB(S) (S & (-S))
-typedef pair<int, int> pii;
-typedef pair<int, pii> piii;
 typedef vector<int> vi;
-typedef vector<pii> vii;
-typedef vector<piii> viii;
 
 int parent[MAX], logt[2*MAX], dp[20][2*MAX], idx[20][2*MAX], subSize[MAX], chain[MAX], chainHead[MAX], position[MAX], arr[MAX], st[4*MAX], nodes, n, mnIndx, chainId = 0, pos = 0;
 vi graph[MAX], height, last, euler;
