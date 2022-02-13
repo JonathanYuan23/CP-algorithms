@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-using namespace std; using vi = vector<int>; using vii = vector<pair<int, int>>;
+using namespace std; using pii = pair<int, int>; using vi = vector<int>; using vii = vector<pii>;
 #define pb push_back
 #define fi first
 #define se second
@@ -13,10 +13,12 @@ void dijkstra(int source, int target) {
     for(int i=1; i<=N; i++) 
         dis[i] = INT_MAX;
     dis[source] = 0;
-    priority_queue<int, vi, greater<int>> pq;
-    pq.push(source);
+
+    priority_queue<pii, vii, greater<pii>> pq;
+    pq.push({0, source});
+    
     while(!pq.empty()) {
-        int u = pq.top(); pq.pop();
+        int u = pq.top().se; pq.pop();
         if(flag[u]) continue;
         flag[u] = 1;
         for(auto &v: adj[u]) {
@@ -24,7 +26,7 @@ void dijkstra(int source, int target) {
             if(dis[v.fi] > d) {
                 dis[v.fi] = d;
                 if(!flag[v.fi])
-                    pq.push(v.fi);
+                    pq.push({dis[v.fi], v.fi});
             }
         }
     }
